@@ -1,0 +1,277 @@
+body {
+	margin: 0;
+}
+
+
+#sleeping_woman {
+	height: 400px;
+	width: 100%;
+	margin: 40px 0;
+
+}
+
+h1 {
+	font-family: 'Poiret One', cursive;
+	margin: 26px 0 0 8px;
+}
+
+#name {
+	font-family: 'sansita', cursive;
+	color: white;
+	font-size: 40px;
+	word-spacing: 20px;
+	margin-left: 15px;
+	position: relative;
+	top: -20px;
+	right: -15px;
+}
+
+#name a {
+	color: white;
+}
+
+#tag_line {
+	font-family: 'Libre Baskerville', serif;
+	margin-left: 19px;
+	position: relative;
+	top: -25px;
+	right: -60px;
+	letter-spacing: 2px;
+	color: white;
+}
+
+ul li {
+	display: inline;
+}
+
+
+ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#navigation {
+	text-align: right;
+	position: relative;
+	top: -80px;
+	right: 20px;
+
+}
+
+#navigation ul li {
+	display: inline;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	padding: 8px 10px;
+	margin: 1px;
+	border: 2px solid black;
+	background-color: white;
+	font-size: 22px;
+	border-radius: 4px;
+	box-shadow: 4px 4px;
+}
+
+#navigation ul li:hover {
+	border: 3px solid black;
+}
+
+#navigation ul li:nth-child(5) {
+	margin-left: 40px;
+	box-shadow: 7px 7px;
+	background-color: #1BA61D;
+}
+
+#about {
+	width: 100%;
+	height: 550px;
+	background-color: white;
+}
+
+#about p {
+	line-height: 30px;
+	margin: 0 auto;
+	font-size: 24px;
+	padding: 10px;
+	max-width: 950px;
+	text-indent: 40px;
+	font-family: 'Abel', sans-serif;}
+
+header {
+	display: block;
+	height: 80px;
+	width: 100%;
+	border-bottom: 2px solid black;
+	background-color: #3874F5;
+	position: fixed;
+	border-radius: 0 0 6px 6px;
+}
+
+footer {
+	width: 100%;
+	height: 120px;
+	background-color: #1BA61D;
+	text-align: center;
+	color: white;
+	opacity: 0.8;
+	font-family: 'Abel', sans-serif;
+}
+footer li {
+	padding-right: 6px;
+	border-right: 2px solid black;
+	margin-right: 2px;
+	position: relative;
+	top: 50px;
+}
+footer li:nth-child(5) {
+	border-right: none;
+}
+
+.section_title {
+	text-align: center;
+	font-size: 35px;
+	margin: 10px 0 0 18px;
+	padding: 20px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.testimonial_people {
+	width: 120px;
+	height: 120px;
+	border-radius: 100px;
+	border: 4px solid #4DACFA;
+	margin-left: 30px;
+	margin-right: 20px;
+	float: left;
+}
+
+#testimonials_section {
+	background-color: lightgray;
+	height: 600px;
+	font-family: 'Abel', sans-serif;
+}
+
+#testimonials_section div {
+	display: inline-block;
+	margin: 0 20px 5px 250px;
+	text-align: left;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	width: 800px;
+
+}
+
+#locations {
+	background-color: white;
+	height: 600px;
+	width: 100%;
+	font-family: 'Abel', sans-serif;
+}
+
+.location-name {
+	text-align: center;
+	font-weight: bold;
+}
+
+table img {
+	width: 300px;
+	height: 300px;
+	padding: 4px;
+	border-radius: 10px;
+
+}
+
+
+.customer_text {
+	font-style: italic;
+	padding-left: 10px;
+}
+
+#pricing {
+	background-color: lightgray;
+	width: 100%;
+	height: 750px;
+	font-family: 'Abel', sans-serif;
+}
+
+
+#pricing-description {
+	height: 250px;
+	width: 750px;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+
+#pricing-description p {
+	text-align: center;
+	letter-spacing: 2px;
+
+}
+
+#pricing-description ul li {
+	position: relative;
+	left: -15px;
+	letter-spacing: 2px;
+}
+
+#reservation_section {
+	height: 1100px;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 20px;
+	font-family: 'Abel', sans-serif;
+}
+
+fieldset {
+	width: 700px;
+	height: 270px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 40px;
+}
+
+#registration_button {
+	width: 726px;
+	height: 50px;
+	text-align: center;
+	border: 2px solid black;
+	background-color: lightgray;
+}
+
+#centered-submit {
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+input[type="textarea"] {
+	width: 600px;
+	height: 200px;
+	border: 1px solid gray;
+}
+input[type="date"]{
+	text-align: center;
+}
+
+input {
+	width: 300px;
+	text-align: center;
+}
+
+#copyright {
+	font-size: 12px;
+	position: relative;
+	top: 45px;
+	padding: 2px;
+	margin-bottom: 2px;
+}
+
+fieldset select {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+}
