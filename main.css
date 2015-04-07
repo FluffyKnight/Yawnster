@@ -1,25 +1,40 @@
+/****************************************************************
+	RESET
+****************************************************************/
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
+	background: url("images/sleeping_woman.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
+a {
+	text-decoration: none;
+}
 
-#sleeping_woman {
-	height: 400px;
+/****************************************************************
+	HEADER
+****************************************************************/
+header {
+	display: block;
+	height: 70px;
 	width: 100%;
-	margin: 40px 0;
-
-}
-
-h1 {
-	font-family: 'Poiret One', cursive;
-	margin: 26px 0 0 8px;
+	border-bottom: 2px solid black;
+	background-color: #3874F5;
+	position: fixed;
+	z-index: 1;
+	border-radius: 0 0 6px 6px;
 }
 
 #name {
 	font-family: 'sansita', cursive;
 	color: white;
 	font-size: 40px;
-	word-spacing: 20px;
 	margin-left: 15px;
 	position: relative;
 	top: -20px;
@@ -30,28 +45,15 @@ h1 {
 	color: white;
 }
 
-#tag_line {
+
+#tag-line {
 	font-family: 'Libre Baskerville', serif;
 	margin-left: 19px;
 	position: relative;
 	top: -25px;
 	right: -60px;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: white;
-}
-
-ul li {
-	display: inline;
-}
-
-
-ul li a {
-	color: black;
-	text-decoration: none;
-}
-
-a {
-	text-decoration: none;
 }
 
 #navigation {
@@ -64,16 +66,17 @@ a {
 
 #navigation ul li {
 	display: inline;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	padding: 8px 10px;
-	margin: 1px;
+	font-family: 'sansita', cursive;
+	padding: 4px 6px;
+	margin: 0 3px;
 	border: 2px solid black;
 	background-color: white;
-	font-size: 22px;
+	font-size: 23px;
 	border-radius: 4px;
 	box-shadow: 4px 4px;
+	list-style: none;
 }
+
 
 #navigation ul li:hover {
 	border: 3px solid black;
@@ -81,94 +84,89 @@ a {
 
 #navigation ul li:nth-child(5) {
 	margin-left: 40px;
-	box-shadow: 7px 7px;
-	background-color: #1BA61D;
+	box-shadow: 7px;
 }
 
-#about {
-	width: 100%;
-	height: 550px;
-	background-color: white;
-}
 
-#about p {
-	line-height: 30px;
+/****************************************************************
+	GENERAL SECTIONS
+****************************************************************/
+.section-title {
+	text-align: center;
+	font-size: 40px;
 	margin: 0 auto;
-	font-size: 24px;
-	padding: 10px;
-	max-width: 950px;
-	text-indent: 40px;
-	font-family: 'Abel', sans-serif;}
-
-header {
-	display: block;
-	height: 80px;
-	width: 100%;
-	border-bottom: 2px solid black;
-	background-color: #3874F5;
-	position: fixed;
-	border-radius: 0 0 6px 6px;
-}
-
-footer {
-	width: 100%;
-	height: 120px;
-	background-color: #1BA61D;
-	text-align: center;
-	color: white;
-	opacity: 0.8;
-	font-family: 'Abel', sans-serif;
-}
-footer li {
-	padding-right: 6px;
-	border-right: 2px solid black;
-	margin-right: 2px;
-	position: relative;
-	top: 50px;
-}
-footer li:nth-child(5) {
-	border-right: none;
-}
-
-.section_title {
-	text-align: center;
-	font-size: 35px;
-	margin: 10px 0 0 18px;
 	padding: 20px 0;
 	font-family: 'Montserrat', sans-serif;
 }
 
 
 
-.testimonial_people {
+h1 {
+	font-family: 'Poiret One', cursive;
+	margin: 26px 0 0 8px;
+}
+
+.sections {
+	position: relative;
+	top: 150px;
+	background-color: rgba(145,140,142,0.8);
+	
+}
+
+/****************************************************************
+	ABOUT SECTION
+****************************************************************/
+#about {
+	width: 700;
+}
+
+#about p {
+	line-height: 30px;
+	margin: 0 auto;
+	font-size: 18px;
+	padding: 10px;
+	max-width: 950px;
+	text-indent: 40px;
+	font-family: 'Abel', sans-serif;
+}
+
+
+
+/****************************************************************
+	TESTIMONIAL SECTION
+****************************************************************/
+.testimonial-people {
 	width: 120px;
 	height: 120px;
 	border-radius: 100px;
 	border: 4px solid #4DACFA;
-	margin-left: 30px;
 	margin-right: 20px;
 	float: left;
 }
 
-#testimonials_section {
-	background-color: lightgray;
+#testimonials{
 	height: 600px;
 	font-family: 'Abel', sans-serif;
 }
 
-#testimonials_section div {
+#testimonials div {
 	display: inline-block;
-	margin: 0 20px 5px 250px;
+	margin: 0 20px 5px 200px;
 	text-align: left;
 	padding-left: 5px;
 	padding-bottom: 5px;
-	width: 800px;
+	width: 900px;
 
 }
 
+.customer-text {
+	font-style: italic;
+}
+
+/****************************************************************
+	LOCATION SECTION
+****************************************************************/
 #locations {
-	background-color: white;
-	height: 600px;
 	width: 100%;
 	font-family: 'Abel', sans-serif;
 }
@@ -183,19 +181,13 @@ table img {
 	height: 300px;
 	padding: 4px;
 	border-radius: 10px;
-
 }
 
-
-.customer_text {
-	font-style: italic;
-	padding-left: 10px;
-}
-
+/****************************************************************
+	PRICING AND HOURS SECTION
+****************************************************************/
 #pricing {
-	background-color: lightgray;
 	width: 100%;
-	height: 750px;
 	font-family: 'Abel', sans-serif;
 }
 
@@ -219,10 +211,12 @@ table img {
 	letter-spacing: 2px;
 }
 
-#reservation_section {
-	height: 1100px;
+
+/****************************************************************
+	RESERVATION SECTION
+****************************************************************/
+#reservation{
 	width: 100%;
-	background-color: white;
 	margin-bottom: 20px;
 	font-family: 'Abel', sans-serif;
 }
@@ -262,6 +256,37 @@ input {
 	text-align: center;
 }
 
+
+
+fieldset select {
+	display: block;
+	margin: 0 auto;
+	width: 400px;
+}
+
+
+
+/****************************************************************
+	FOOTER
+****************************************************************/
+footer {
+	width: 100%;
+	text-align: center;
+	color: white;
+	opacity: 0.8;
+	font-family: 'Abel', sans-serif;
+}
+footer li {
+	padding-right: 6px;
+	border-right: 2px solid black;
+	margin-right: 2px;
+	position: relative;
+	top: 50px;
+}
+footer li:nth-child(5) {
+	border-right: none;
+}
+
 #copyright {
 	font-size: 12px;
 	position: relative;
@@ -270,8 +295,49 @@ input {
 	margin-bottom: 2px;
 }
 
-fieldset select {
-	display: block;
-	margin: 0 auto;
-	width: 400px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
